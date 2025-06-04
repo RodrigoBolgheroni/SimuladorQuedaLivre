@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header, footer {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-principal {
+    display: flex;
+    gap: 30px;
+    margin: 100px 20px 20px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs {
+    background-color: yellow;
+    opacity: 0.2;
+    font-size: x-large;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.inputs::placeholder {
+    color: black;
+}
+
+.inputs:hover {
+    background-color: rgb(162, 162, 0);
+    color: white;
+    transform: scale(0.97);
+}
+
+.botao {
+    background-color: rgb(244, 244, 115);
+    font-size: large;
+    color: black;
+    border: none;
+    padding: 10px;
+    width: 500px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: rgb(162, 162, 0);
+    color: white;
+    transform: scale(0.97);
+}
+
+.calculos {
+    padding: 50px;
+    width: 900px;
+    background-color: white;
+    border: 5px solid yellow;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
