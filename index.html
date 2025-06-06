@@ -1,55 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queda Livre</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-</html>
 
 <body>
 
-    <header>
-        <h1>- Queda Livre -</h1>
-    </header>
+  <header>
+    <h1>- Queda Livre -</h1>
+  </header>
 
-    <main>
-        <section class="container-principal">
-            <form class="container" action="./script.js" method="GET">
-                <h1>Parametros</h1>
-                <input class="inputs" type="text" placeholder="Digite a Aceleração da gravidade">
-                <input class="inputs" type="text" placeholder="Digite a Velocidade inicial">
-                <input class="inputs" type="text" placeholder="Digite a Distância inicial">
-                <section class="container-botoes">
-                    <button class="botao" type="button">
-                        <img src="./Group 2.png" alt="Calculadora">
-                        Ver cálculos
-                    </button>
+  <main>
+    <section class="container-principal">
 
-                    <button class="botao" type="button">
-                        <img src="./Group 3.png" alt="Simulação">
-                        Ver simulação
-                    </button>
-                </section>
-
-            </form>
-            <section class="calculos">
-                <section class="botoes_em_cima">
-                    <button class="botao_ botao_ativo">Cálculos</button>
-                    <button class="botao_">Simulação</button>
-                </section>
-                <h2>Cálculos</h2>
-                <p>Os cálculos irão aparecer aqui.</p>
-            </section>
-
+      <form class="container" action="./script.js" method="GET">
+        <h1>Parâmetros</h1>
+        <input class="inputs" type="text" placeholder="Digite a Aceleração da gravidade">
+        <input class="inputs" type="text" placeholder="Digite a Velocidade inicial">
+        <input class="inputs" type="text" placeholder="Digite a Distância inicial">
+        <section class="container-botoes">
+          <button class="botao" type="button">
+            <img src="./Group 2.png" alt="Calculadora">
+            Ver cálculos
+          </button>
+          <button class="botao" type="button">
+            <img src="./Group 3.png" alt="Simulação">
+            Ver simulação
+          </button>
         </section>
-    </main>
+      </form>
 
-    <footer>
+      <!-- Botões sobrepostos no topo da calculos -->
+      <section class="botoes_em_cima">
+        <button class="botao_ botao_ativo">Cálculos</button>
+        <button class="botao_">Simulação</button>
+      </section>
 
-    </footer>
+      <section class="calculos">
+        <h2>Cálculos</h2>
+        <p>Os cálculos irão aparecer aqui.</p>
+      </section>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Queda Livre</p>
+  </footer>
 
 </body>
+
+</html>
