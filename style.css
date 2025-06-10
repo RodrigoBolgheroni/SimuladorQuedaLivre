@@ -204,7 +204,6 @@
     margin-left: 15px;
     color: rgb(129, 129, 54);
   }
-
   .container-principal h1 {
     margin-left: 175px;
     color: rgb(129, 129, 54);
@@ -219,7 +218,6 @@
     justify-content: center;
     z-index: 1;
   }
-
   .botao_ {
     display: flex;
     align-items: center;
@@ -238,7 +236,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 70%;
   }
-
   .botao_:hover {
     background-color: #ebc83b;
     transform: scale(1.01);
