@@ -1,3 +1,6 @@
+  /* O box-sizing serve para alterar a forma como o css calcula a largura e altura, pois quando ele é definido a latgura e altura do elemento consideram a borda e o padding tambem*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +42,8 @@
     flex-direction: column;
     gap: 15px;
   }
-  
+    /* opacity é a transparencia,vai de 0 a 1*/
+
   .inputs {
     background-color: yellow;
     opacity: 0.2;
@@ -96,6 +100,8 @@
     gap: 20px;
     align-items: center;
   }
+
+  /* O z-Index é o nivel do elemento, se ele for maior, ele irá sobrepor o outro z-index que está menor*/
   
   .calculos {
     position: relative;
@@ -118,7 +124,8 @@
     margin-left: 175px;
     color: rgb(129, 129, 54);
   }
-  
+    /*Esse top faz os botoes irem pra cima do calculos*/
+
   .botoes_em_cima {
     position: absolute;
     top: -50px;
@@ -146,11 +153,10 @@
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 70%;
-    z-index: 1;
   }
   
   .botao_:hover {
     background-color: #ebc83b;
-    transform: scale(0.99);
+    transform: scale(1.01);
   }
   
