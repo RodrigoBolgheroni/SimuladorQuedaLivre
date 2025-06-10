@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Queda Livre</title>
   <link rel="stylesheet" href="style.css">
+  <title></title>
 </head>
-
 <body>
 
   <header>
-    <h1>- Queda Livre -</h1>
+    <h1>Simulação de Queda Livre</h1>
   </header>
 
   <main>
     <section class="container-principal">
-
-      <form class="container" action="./script.js" method="GET">
+      <div class="parametros">
         <h1>Parâmetros</h1>
-        <input class="inputs" type="text" placeholder="Digite a Aceleração da gravidade">
-        <input class="inputs" type="text" placeholder="Digite a Velocidade inicial">
-        <input class="inputs" type="text" placeholder="Digite a Distância inicial">
+        <form class="container" action="./script.js" method="GET">
+          <label for="altura">Altura inicial (m)</label>
+          <input class="inputs" type="text" id="altura" placeholder="Digite a altura inicial em metros. Ex: 100">
+          <label for="velocidade">Velocidade inicial (m)</label>
+          <input class="inputs" type="text" id="velocidade" placeholder="Digite a velocidade inicial em metros. Ex: 0">
+          <label for="aceleracao">Aceleração da Gravidade (m/s)²</label>
+          <input class="inputs" type="text" id="aceleracao" placeholder="Digite a aceleração da gravidade em (m/s)²">
+        </form>
         <section class="container-botoes">
           <button class="botao" type="button">
             <img src="./Group 2.png" alt="Calculadora">
-            Ver cálculos
+              Ver cálculos
           </button>
           <button class="botao" type="button">
             <img src="./Group 3.png" alt="Simulação">
-            Ver simulação
+              Ver simulação
           </button>
         </section>
       </form>
@@ -51,5 +53,9 @@
   </footer>
 
 </body>
+<<<<<<< HEAD
 
 </html>
+=======
+</html>
+>>>>>>> 9d9824547af5a8fdee82a5d3cb6a465397415cce
