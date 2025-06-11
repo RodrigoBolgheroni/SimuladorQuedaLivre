@@ -1,0 +1,231 @@
+  /* O box-sizing serve para alterar a forma como o css calcula a largura e altura, pois quando ele é definido a latgura e altura do elemento consideram a borda e o padding tambem*/
+  @import url(https://fonts.googleapis.com/css?family=Poppins);
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    background: #fffde7;
+  }
+
+  header,
+  footer {
+    background-color: #fff950;
+    color: #7a7300;
+    text-align: center;
+    padding: 15px 0 18px 0;
+    width: 100%;
+  }
+
+  header h1 {
+    color: #7a7300;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+
+  footer p {
+    font-size: 1.1em;
+    font-weight: 500;
+    opacity: 0.3;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-principal {
+    display: flex;
+    position: relative;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 100px 100px 10px 100px;
+    gap: 100px;
+    max-width: 1200px;
+  }
+
+  .parametros {
+    background-color: #fff9c4;
+    color: #7a7300;
+    border-radius: 20px;
+    padding: 32px 28px 32px 28px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .parametros h2 {
+    font-size: 1.6em;
+    margin-bottom: 12px;
+    color: #7a7300;
+    font-weight: bold;
+  }
+
+  .parametros label {
+    color: #7a7300;
+    font-size: 1.1em;
+    margin-top: 8px;
+    margin-bottom: 2px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .inputs {
+    background-color: #fffde7;
+    font-size: 1.2em;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    text-align: left;
+    padding: 16px 18px;
+    border: 1.5px solid #ffe082;
+    border-radius: 10px;
+    color: #333;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+
+  .inputs::placeholder {
+    color: #888;
+    font-size: 0.75em;
+  }
+
+  .inputs:focus {
+    outline: 2px solid #ffe082;
+    background: #fff9c4;
+  }
+
+  .botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 0;
+    background-color: #fff950;
+    color: #7a7300;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #ffe082;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .botao img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .botao:hover {
+    background-color: #ffe082;
+    color: #4a3f00;
+  }
+
+  .container-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .calculos-bloco {
+    background: #fff;
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    width: 1600px;
+    padding: 0 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
+
+  .abas {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #ffe082;
+  }
+
+  .aba {
+    flex: 1;
+    background: #fff950;
+    border: none;
+    outline: none;
+    padding: 18px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #7a7300;
+    cursor: pointer;
+    transition:  0.2s;
+    border-radius: 12px 12px 0 0;
+  }
+  .aba:hover{
+    transform: scale(1.01);
+  }
+
+  .aba.ativa {
+    background: #fff950;
+    color: #4a3f00;
+  }
+
+  .calculos-conteudo {
+    padding: 20px 32px 0 32px;
+    font-size: 0.95em;
+    color: #333;
+    line-height: 1.4;
+    min-height: 350px;
+  }
+
+  .container-principal h3 {
+    margin-left: 15px;
+    color: rgb(129, 129, 54);
+  }
+
+  .container-principal h1 {
+    margin-left: 175px;
+    color: rgb(129, 129, 54);
+  }
+
+
+
+  @media (max-width: 1000px) {
+    .main-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .calculos-bloco {
+      width: 95vw;
+      min-width: unset;
+      max-width: 98vw;
+    }
+
+    .parametros {
+      width: 95vw;
+      min-width: unset;
+      max-width: 98vw;
+    }
+  }

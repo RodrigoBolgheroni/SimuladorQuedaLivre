@@ -3,39 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Simulação de Queda Livre</title>
+  <script src="assets/js/script.js"></script>
 </head>
 <body>
 
   <header>
-    <h1>Simulação de Queda Livre</h1>
+    <h1><strong>Simulação de Queda Livre</strong></h1>
   </header>
 
   <main>
     <div class="main-content">
       <aside class="parametros">
         <h2>Parâmetros</h2>
-        <form method="GET">
+        <form id="form-queda-livre">
           <label for="altura">Altura inicial (m)</label>
           <input class="inputs" type="text" id="altura" name="altura" placeholder="Digite a altura inicial em metros. Ex: 100">
-          <label for="velocidade">Velocidade inicial (m)</label>
+          <label for="velocidade">Velocidade inicial (m/s)</label>
           <input class="inputs" type="text" id="velocidade" name="velocidade" placeholder="Digite a velocidade inicial em metros. Ex: 0">
           <label for="aceleracao">Aceleração da Gravidade (m/s²)</label>
           <input class="inputs" type="text" id="aceleracao" name="aceleracao" placeholder="Digite a aceleração da gravidade em (m/s²). Ex: 9.8">
           <button class="botao" type="submit">
-            <img src="./imgs/Group 2.png" alt="Calculadora">
-            Ver cálculos
+          <img src="./imgs/Group 2.png" alt="Calculadora">
+              Ver cálculos
           </button>
           <button class="botao" type="button">
             <img src="./imgs/Group 3.png" alt="Simulação">
             Ver simulação
           </button>
-        </form>
+          </form>
       </aside>
       <section class="calculos-bloco">
         <div class="abas">
-          <button class="aba ativa">Cálculos</button>
+          <button class="aba ativa">Cálculos </button>
           <button class="aba">Simulação</button>
         </div>
         <div class="calculos-conteudo">
@@ -63,4 +64,5 @@
   <footer>
     <p>&copy; 2025 - Queda Livre</p>
   </footer>
-
+  </body>
+  </html>
