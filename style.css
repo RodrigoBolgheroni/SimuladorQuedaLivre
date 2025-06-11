@@ -109,7 +109,7 @@
 
   .inputs::placeholder {
     color: #888;
-    font-size: 1em;
+    font-size: 0.75em;
   }
 
   .inputs:focus {
@@ -193,10 +193,10 @@
   }
 
   .calculos-conteudo {
-    padding: 32px 32px 0 32px;
-    font-size: 1.1em;
+    padding: 20px 32px 0 32px;
+    font-size: 0.95em;
     color: #333;
-    line-height: 1.7;
+    line-height: 1.4;
     min-height: 350px;
   }
 
@@ -204,6 +204,7 @@
     margin-left: 15px;
     color: rgb(129, 129, 54);
   }
+
   .container-principal h1 {
     margin-left: 175px;
     color: rgb(129, 129, 54);
@@ -218,6 +219,7 @@
     justify-content: center;
     z-index: 1;
   }
+
   .botao_ {
     display: flex;
     align-items: center;
@@ -236,6 +238,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 70%;
   }
+
   .botao_:hover {
     background-color: #ebc83b;
     transform: scale(1.01);
