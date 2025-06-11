@@ -167,37 +167,40 @@ main {
 
 .abas {
   display: flex;
-  flex-direction: row;
-  border-bottom: 2px solid #ffe082;
+  border-bottom: 2px solid #f3e36a;
+  background: #fff9c4;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 16px;
 }
 
 .aba {
   flex: 1;
-  background: #fffde7;
-  border: none;
-  outline: none;
-  padding: 18px 0;
-  font-size: 1.2em;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 1rem;
   font-weight: bold;
-  color: #7a7300;
+  color: #444;
+  text-decoration: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
   cursor: pointer;
-  transition: background 0.2s;
-  border-radius: 12px 12px 0 0;
 }
 
-.aba.ativa {
-  background: #fff950;
-  color: #4a3f00;
+.aba.ativa, .aba:hover {
+  background: #fff176;
+  color: #222;
+  border-bottom: 2px solid #fbc02d;
 }
 
-.calculos-conteudo {
-  padding: 20px 32px 0 32px;
-  font-size: 0.95em;
-  color: #333;
-  line-height: 1.4;
-  min-height: 350px;
+.calculos-bloco {
+  background: #fff;
+  border-radius: 12px;
+  border: 2px solid #ffe082;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 16px;
 }
-
 .container-principal h3 {
   margin-left: 15px;
   color: rgb(129, 129, 54);
