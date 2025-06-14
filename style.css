@@ -160,7 +160,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     min-width: 480px;
     max-width: 700px;
-    width: 600px;
+    width: 800px;
     padding: 0 0 32px 0;
     display: flex;
     flex-direction: column;
@@ -181,7 +181,7 @@
     padding: 18px 0;
     font-size: 1.2em;
     font-weight: bold;
-    color: #7a7300;
+    color: #7a7300; 
     cursor: pointer;
     transition: background 0.2s;
     border-radius: 12px 12px 0 0;
@@ -231,7 +231,7 @@
     color: #4A3F00;
     font-size: 22px;
     font-weight: bold;
-    cursor: pointer;
+    cursor: pointer;  
     border-radius: 10px 10px 0 0;
     border: none;
     transition: all 0.3s ease;
@@ -252,9 +252,9 @@
     }
 
     .calculos-bloco {
-      width: 95vw;
+      width:15vw;
       min-width: unset;
-      max-width: 98vw;
+      max-width: 100vw;
     }
 
     .parametros {
