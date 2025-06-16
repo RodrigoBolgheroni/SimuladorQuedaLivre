@@ -1,5 +1,4 @@
-  /* O box-sizing serve para alterar a forma como o css calcula a largura e altura, pois quando ele é definido a latgura e altura do elemento consideram a borda e o padding tambem*/
-  @import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
   * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,7 @@
     background-color: #fff950;
     color: #7a7300;
     text-align: center;
-    padding: 15px 0 18px 0;
+    padding: 8px 0 18px 0;
     width: 100%;
   }
 
@@ -41,17 +40,12 @@
     flex-direction: column;
   }
 
-  .container-principal {
-    display: flex;
-    position: relative;
-  }
-
   .main-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    margin: 100px 100px 10px 100px;
+    margin: 30px auto 30px auto;
     gap: 100px;
     max-width: 1200px;
   }
@@ -70,7 +64,6 @@
 
   .parametros h2 {
     font-size: 1.6em;
-    margin-bottom: 12px;
     color: #7a7300;
     font-weight: bold;
   }
@@ -80,12 +73,6 @@
     font-size: 1.1em;
     margin-top: 8px;
     margin-bottom: 2px;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-
   }
 
   .inputs {
@@ -99,21 +86,49 @@
     border: 1.5px solid #ffe082;
     border-radius: 10px;
     color: #333;
-    margin-bottom: 8px;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     box-sizing: border-box;
   }
-
-  .inputs::placeholder {
-    color: #888;
-    font-size: 0.75em;
-  }
-
+  
   .inputs:focus {
     outline: 2px solid #ffe082;
     background: #fff9c4;
   }
 
+  .floating-label {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .floating-label input.inputs::placeholder {
+    color: transparent; 
+  }
+  
+  .floating-label label {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    color: #7a7300;
+    font-size: 1.1em;
+    pointer-events: none;
+    background-color: #fffde7;
+    padding: 0 6px;
+    transition: 0.5s;
+    border-radius: 4px;
+  }
+  
+  /* Quando o input estiver em foco ou preenchido */
+  .floating-label input:focus + label,
+  .floating-label input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 14px;
+    font-size: 0.85em;
+    color: #4a3f00;
+    font-weight: 600;
+  }
   .botao {
     display: flex;
     align-items: center;
@@ -141,13 +156,6 @@
   .botao:hover {
     background-color: #ffe082;
     color: #4a3f00;
-  }
-
-  .container-botoes {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
   }
 
   .calculos-bloco {
@@ -195,22 +203,10 @@
   .calculos-bloco {
     background: #fff;
     border-radius: 12px;
-    border: 2px solid #ffe082;
     width: 100%;
     max-width: 600px;
     margin-bottom: 16px;
   }
-  .container-principal h3 {
-    margin-left: 15px;
-    color: rgb(129, 129, 54);
-  }
-
-  .container-principal h1 {
-    margin-left: 175px;
-    color: rgb(129, 129, 54);
-  }
-
-
 
   @media (max-width: 1000px) {
     .main-content {
