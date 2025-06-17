@@ -196,12 +196,18 @@
   .calculos-conteudo{
     margin-left: 30px;
   }
-  .aba.ativa, .aba:hover {
-    background: #fff176;
+  .aba:hover {
+    background: rgba(255, 241, 118, 0.4);
     color: #222;
     border-bottom: 2px solid #fbc02d;
   }
-  
+  .ativa {
+    background-color: #fff176;
+  }
+  .ativa:hover {
+    background-color: #fff176;
+  }
+
   .calculos-bloco {
     background: #fff;
     border-radius: 12px;
