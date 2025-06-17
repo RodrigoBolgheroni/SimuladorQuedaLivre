@@ -1,18 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE html>Add commentMore actions
 <html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/simulacao.css">
     <title>Simulação</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Simulação de Queda Livre</title>
+  <script src="assets/js/script.js"></script>
 </head>
 <body>
     
+
   <header>
     <h1>Simulação de Queda Livre</h1>
   </header>
-
-  <main>
+@@ -16,36 +17,59 @@ <h1>Simulação de Queda Livre</h1>
     <div class="main-content">
       <aside class="parametros">
         <h2>Parâmetros</h2>
@@ -23,23 +29,59 @@
           <input class="inputs" type="text" id="velocidade" name="velocidade" placeholder="Digite a velocidade inicial em metros. Ex: 0">
           <label for="aceleracao">Aceleração da Gravidade (m/s²)</label>
           <input class="inputs" type="text" id="aceleracao" name="aceleracao" placeholder="Digite a aceleração da gravidade em (m/s²). Ex: 9.8">
+        <form id="form-queda-livre">
+          <div class="floating-label">
+            <input class="inputs" type="text" id="altura" name="altura" placeholder=" " required />
+            <label for="altura">Altura inicial (m)</label>
+          </div>
+        
+          <div class="floating-label">
+            <input class="inputs" type="text" id="velocidade-inicial" name="velocidade inicial" placeholder=" " required />
+            <label for="velocidade-inicial">Velocidade inicial (m/s)</label>
+          </div>
+        
+          <div class="floating-label">
+            <input class="inputs" type="text" id="velocidade-final" name="velocidade final" placeholder=" " required />
+            <label for="velocidade-final">Velocidade final (m/s)</label>
+          </div>
+        
+          <div class="floating-label">
+            <input class="inputs" type="text" id="tempo" name="tempo" placeholder=" " required />
+            <label for="tempo">Tempo total de queda (s)</label>
+          </div>
+        
+          <div class="floating-label">
+            <input class="inputs" type="text" id="aceleracao" name="aceleracao" placeholder=" " required />
+            <label for="aceleracao">Aceleração da Gravidade (m/s²)</label>
+          </div>
+        
+          <!-- Botão para os cálculos -->
           <button class="botao" type="submit">
             <img src="./imgs/Group 2.png" alt="Calculadora">
             Ver cálculos
+          <img src="./imgs/Group 2.png" alt="Calculadora">
+              Ver cálculos
           </button>
+
+          <!-- Botão para a simulação -->
           <button class="botao" type="button">
             <img src="./imgs/Group 3.png" alt="Simulação">
             Ver simulação
           </button>
         </form>
+          </form>
       </aside>
       <section class="calculos-bloco">
         <div class="abas">
             <a href="index.html" class="aba">Cálculos</a>
             <a href="simulacao.html" class="aba ativa">Simulação</a>
             </div>
+          <a href="index.html" class="aba ativa">Cálculos</a>
+          <a href="simulacao.html" class="aba">Simulação</a>
+          </div>
         <div class="calculos-conteudo">
        
+          
         </div>
       </section>
     </div>
