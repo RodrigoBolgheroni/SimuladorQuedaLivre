@@ -93,7 +93,8 @@
   
   .inputs:focus {
     outline: 2px solid #ffe082;
-    background: #fff9c4;
+    /* background-color: #fffde7; */
+    background-color: #fff9c4;
   }
 
   .floating-label {
@@ -123,10 +124,11 @@
   /* Quando o input estiver em foco ou preenchido */
   .floating-label input:focus + label,
   .floating-label input:not(:placeholder-shown) + label {
-    top: -8px;
+    top: -15px;
     left: 14px;
     font-size: 0.85em;
     color: #4a3f00;
+    background-color: #fff9c4;
     font-weight: 600;
   }
   .botao {
@@ -194,12 +196,18 @@
   .calculos-conteudo{
     margin-left: 30px;
   }
-  .aba.ativa, .aba:hover {
-    background: #fff176;
+  .aba:hover {
+    background: rgba(255, 241, 118, 0.4);
     color: #222;
     border-bottom: 2px solid #fbc02d;
   }
-  
+  .ativa {
+    background-color: #fff176;
+  }
+  .ativa:hover {
+    background-color: #fff176;
+  }
+
   .calculos-bloco {
     background: #fff;
     border-radius: 12px;
