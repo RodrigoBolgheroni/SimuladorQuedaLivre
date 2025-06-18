@@ -50,6 +50,17 @@
     max-width: 1200px;
   }
 
+  .escolha{
+    display: flex;
+    gap: 20px;
+  }
+
+  #calculos{
+    border-radius: 5px;
+    border-style: none;
+    background-color: #fffde7;
+  }
+
   .parametros {
     background-color: #fff9c4;
     color: #7a7300;
@@ -90,7 +101,10 @@
     margin-top: 5px;
     box-sizing: border-box;
   }
-  
+ 
+  .inputs:hover{
+    border-width: 3px;
+  }
   .inputs:focus {
     outline: 2px solid #ffe082;
     /* background-color: #fffde7; */
@@ -213,9 +227,23 @@
     border-radius: 12px;
     width: 100%;
     max-width: 600px;
-    margin-bottom: 16px;
   }
 
+ #img-simulacao{
+    width: 550px;
+    height: 250px;
+  }
+
+  #maca{
+    position: absolute;
+    width: 40px;
+    margin-left: 70px;
+    margin-top: 35px;
+  }
+
+  video{
+    padding: 20px;
+  }
   @media (max-width: 1000px) {
     .main-content {
       flex-direction: column;
@@ -235,3 +263,27 @@
       max-width: 98vw;
     }
   }
+
+/* Container da simulação na página simulacao.html */
+
+.calculos-bloco .calculos-conteudo {
+  position: relative; 
+  overflow: hidden; 
+  border: 1px solid #eee; 
+}
+
+#img-simulacao {
+  display: block; 
+  width: 100%;   
+  height: 400px;  
+  object-fit: cover; 
+}
+
+#maca {
+  position: absolute;
+  width: 40px;    
+  top: 0px;
+  left: -70px;
+  height: auto;    
+  z-index: 10;     
+}
