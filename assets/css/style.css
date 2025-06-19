@@ -27,11 +27,6 @@
     font-weight: bold;
   }
 
-  footer{
-    position: fixed;
-    bottom: 0;
-  }
-
 
   footer p {
     font-size: 1.1em;
@@ -240,10 +235,10 @@
   }
 
   #maca{
-    position: absolute;
-    width: 40px;
-    margin-left: 70px;
-    margin-top: 35px;
+    position: relative;
+    width: 50px;
+    margin-left: 230px;
+    margin-top: 50px;
   }
 
   video{
@@ -286,9 +281,9 @@
 
 #maca {
   position: absolute;
-  width: 30px;    
-  top: 34.9px;
-  left: -75px;
+  width: 40px;    
+  top: 0px;
+  left: -70px;
   height: auto;    
   z-index: 10;     
 }
