@@ -27,6 +27,11 @@
     font-weight: bold;
   }
 
+  footer{
+    position: fixed;
+    bottom: 0;
+  }
+
 
   footer p {
     font-size: 1.1em;
@@ -229,8 +234,6 @@
     max-width: 600px;
   }
 
-
-
   video{
     padding: 20px;
   }
@@ -271,10 +274,9 @@
 
 #maca{
   position: absolute;
-  width: 7%;
-  height: auto;
+  width: 40px; 
   margin-left: 34%;
-  margin-top: 8%;  
+  margin-top: 7%;   
   top: 0px;
   left: -70px;
   height: auto;    
