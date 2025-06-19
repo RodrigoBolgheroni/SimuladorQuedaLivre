@@ -85,10 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       
       if (targetInputKey && allInputs[targetInputKey] && allInputs[targetInputKey].parentElement) {
-          allInputs[targetInputKey].parentElement.style.display = 'block'; 
-          allInputs[targetInputKey].disabled = true; 
-          allInputs[targetInputKey].placeholder = `Resultado (${getUnitForKey(targetInputKey)})`;
-          allInputs[targetInputKey].required = false;
+          allInputs[targetInputKey].parentElement.style.display = 'none'; 
       }
   }
 

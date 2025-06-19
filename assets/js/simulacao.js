@@ -73,11 +73,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             const h = !isNaN(h_val) && h_val > 0 ? h_val : null;
-            const v0 = !isNaN(v0_val) ? v0_val : 0; 
+            const v0 = !isNaN(v0_val) && h_val >= 0 ? v0_val : null; 
             const g = !isNaN(g_val) && g_val > 0 ? g_val : 9.8; 
 
             if (h === null) {
                 alert("Por favor, insira uma 'Altura inicial (m)' válida e maior que zero para a simulação.");
+                return;
+            }
+            if (v0 === null) {
+                alert("Por favor, insira uma velocidade maior ou igual a 0 para a simulação.");
                 return;
             }
             if (g <= 0) {
