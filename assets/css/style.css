@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins'
   }
-
+  
   body {
     display: flex;
     flex-direction: column;
@@ -242,22 +242,76 @@
       flex-direction: column;
       align-items: center;
       gap: 32px;
+      padding: 0 20px;
     }
-
-    .calculos-bloco {
-      width: 95vw;
-      min-width: unset;
-      max-width: 98vw;
-    }
-
+  
+    .calculos-bloco,
     .parametros {
       width: 95vw;
-      min-width: unset;
       max-width: 98vw;
+      padding: 20px;
     }
   }
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.3em;
+    }
+  
+    .main-content {
+      gap: 20px;
+      padding: 0 10px;
+    }
+  
+    .parametros,
+    .calculos-bloco {
+      width: 100%;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+  
+    .botao {
+      font-size: 1em;
+      padding: 10px;
+    }
+  
+    .floating-label label {
+      font-size: 1em;
+    }
+  
+    .abas {
+      flex-direction: column;
+    }
+  
+    .aba {
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  
+    video {
+      width: 100%;
+      height: auto;
+    }
+  
+    #img-simulacao {
+      height: auto;
+      max-height: 250px;
+    }
+  
+    #maca {
+      width: 30px;
+      left: -50px;
+      margin-left: 30%;
+      margin-top: 10%;
+    }
+    footer{
+      text-align: center;
+      padding: 8px 0 18px 0;
+      width: 350px;
+    }
+    
+  }
 
-/* Container da simulação na página simulacao.html */
 
 .calculos-bloco .calculos-conteudo {
   position: relative; 
